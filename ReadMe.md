@@ -29,7 +29,7 @@ Note: This program do not save data! Data is only stored locally.
 [2] Link of the merchandise from the circle/owner \
 There are two similar links for example: \
 [A] https://booth.pm/en/items/2441613 \
-[B] https://hololive.booth.pm/items/2441613 \
+[B] https://hololive.booth.pm/items/2441613 
 
 The merch is the same but the pages are different. Only the link with the circle/owner (e.g. hololive) domain present (B) can be used.
 
@@ -48,16 +48,18 @@ Examples of some bugs: \
 Solution: Solve the capcha by yourselves.
 
 [2] Account failed to log-in properly. \
-Possible Solution [1] Wrong credentials \
-Possible Solution [2] The next code ran before the page loaded. Requires adding waiting time when logging-in.
+Possible Solution [1]: Wrong credentials \
+Possible Solution [2]: The next code ran before the page loaded. Requires adding waiting time when logging-in.
 
-[3] A certain input/click keeps retrying but failed.
-Possible Solution [1] Depends on the speed of your internet, the code may run faster than the loading time. Just wait for it to load.
-Possible Solution [2] If [1] fails. Manually click the button. It should proceed to the next code. 
-Possible Solution [3] If [2] fails, Increase your Loadtime_buffer. Your PC/ISP might be too slow such that some codes get overrided by the next code.
+[3] A certain input/click keeps retrying but failed.\
+Possible Solution [1]: Depends on the speed of your internet, the code may run faster than the loading time. Just wait for it to load.\
+Possible Solution [2]: If [1] fails. Manually click the button. It should proceed to the next code. \
+Possible Solution [3]: If [2] fails, Increase your Loadtime_buffer. Your PC/ISP might be too slow such that some codes get overrided by the next code.
 
 #### IF THERE ARE ANY ISSUES, PLEASE CONTACT ME
 #### FEEDBACK IS HIGHLY APPRECIATED 
+Twitter: Yahiko_Daichi \
+Discord: Yahiko#1354
 
 ###### Short-term Developments:
 - [] Translate variant type from Japanese to English
