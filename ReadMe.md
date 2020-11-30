@@ -1,10 +1,12 @@
-Title: Booth Shoe Bot
+# Title: Booth Shoe Bot
 Author: YahikoSV
+
 Contributor: CrugarMan
+
 Version: 2.1.1
 
-### FOR PERSONAL USE ONLY: ###
-### ASK PERMISSION FROM AUTHOR IF YOU WANT TO USE IT ###
+#### FOR PERSONAL USE ONLY: 
+#### ASK PERMISSION FROM AUTHOR IF YOU WANT TO USE IT
 
 This is a Shoe Bot for Booth. Since it is only for personal project,
 this only uses one method of purchasing an item. No UI Yet.
