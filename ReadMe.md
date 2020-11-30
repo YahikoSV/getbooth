@@ -1,6 +1,6 @@
 # Booth Shoe Bot
 Author: YahikoSV \
-Contributor: CrugarMan \
+Contributor: adwaitrawat \
 Version: 2.1.1
 
 #### FOR PERSONAL USE ONLY
@@ -72,6 +72,6 @@ Possible Solution [3] If [2] fails, Increase your Loadtime_buffer. Your PC/ISP m
 
 ##### Versions: 
 2.1.1 - Bug Fixes and Bug fixes \
-2.1 - Refactor code (CrugarMan) \
+2.1 - Refactor code (adwaitrawat) \
 2.0 - Convert Hololive Shoe Bot -> Booth Shoe Bot \
 1.0 - Base Code
