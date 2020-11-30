@@ -1,34 +1,33 @@
 # Title: Booth Shoe Bot
-Author: YahikoSV
-
-Contributor: CrugarMan
-
+Author: YahikoSV \
+Contributor: CrugarMan \
 Version: 2.1.1
 
-#### FOR PERSONAL USE ONLY: 
+#### FOR PERSONAL USE ONLY
 #### ASK PERMISSION FROM AUTHOR IF YOU WANT TO USE IT
 
 This is a Shoe Bot for Booth. Since it is only for personal project,
 this only uses one method of purchasing an item. No UI Yet.
 
-Pre-requisites: More necessary info/examples below:
-[1] Has existing Pixiv Account
-[2] Link of the merchandise from the circle/owner.
-[3] Selenium Webdriver (Chrome, Edge, Firefox)
-[4] Payment method must be Paypal and is already completed beforehand (first field)
-[5] Shipping address is already completed beforehand
-[6] Shipping method is either "Physical" or "Digital" only.
-[7] The language of the booth website when last logged-in should be in English.
+##### Pre-requisites: More necessary info/examples below: 
+[1] Has existing Pixiv Account \
+[2] Link of the merchandise from the circle/owner. \
+[3] Selenium Webdriver (Chrome, Edge, Firefox) \
+[4] Payment method must be Paypal and is already completed beforehand (first field) \
+[5] Shipping address is already completed beforehand \
+[6] Shipping method is either "Physical" or "Digital" only. \
+[7] The language of the booth website when last logged-in should be in English. \
 [8] Purchases only "1 item with 1 quantity" at a time.
 
 
-# [1] Has existing Pixiv Account
-Basically you need your Username/Email and Password.
+##### Notes:
+
+[1] Has existing Pixiv Account \
+Basically you need your Username/Email and Password. \
 Note: This program do not save data! Data is only stored locally.
 
-# [2] Link of the merchandise from the circle/owner
+[2] Link of the merchandise from the circle/owner
 There are two similar links for example:
-
 [A] https://booth.pm/en/items/2441613
 [B] https://hololive.booth.pm/items/2441613
 
