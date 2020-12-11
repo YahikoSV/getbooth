@@ -19,7 +19,7 @@ Pixiv_Password = "" #"password"
 URL = ""  #"https://hololive.booth.pm/items/2533220" 
 
 #Time Available
-PrePurchase = True #If item not yet released = True
+PrePurchase = False #If item not yet released = True
 #Note: The button rank of the variants may change (e.g. when item(s) get sold out)
 #Do not set it True when the item is already released to be safe
 

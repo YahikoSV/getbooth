@@ -18,7 +18,7 @@ class Consts(Enum):
     SECOND_LAG = 59
     RELOAD_LAG = 1
     LOADING_LAG = 5 
-    COUNTDOWN_TIMER = 10 #mins
+    COUNTDOWN_TIMER = 30 #mins
 
 class ShoeMod:
     def __init__(self, Pixiv_ID, Pixiv_Password, webdriver_type, webdriver_path, latency = 1):
@@ -75,15 +75,19 @@ class ShoeMod:
             Current_Time = None
             print("waiting...")
             print (Time_Available)
-            while [Time[0], Time[1]] >= [dt.datetime.now().hour,  dt.datetime.now().minute + Consts.COUNTDOWN_TIMER.value]:
-                continue
-
+            CT = [dt.datetime.now().hour,  dt.datetime.now().minute]
+            if CT[1] + Consts.COUNTDOWN_TIMER.value >= 60:
+                CT[0] = CT[0] + int((CT[1] + Consts.COUNTDOWN_TIMER.value)/60)
+                CT[1] = (CT[1] + Consts.COUNTDOWN_TIMER.value)%60
+                
+            while [Time[0], Time[1]] >= [CT[0],  CT[1] + Consts.COUNTDOWN_TIMER.value]:
+                CT = [dt.datetime.now().hour,  dt.datetime.now().minute]
+        
             print("countdown!")
             while(Current_Time := dt.datetime.now()).strftime('%H:%M') != Time_Available:
-                time.sleep(Consts.RELOAD_LAG.value)
-                print("{:02d}:{:02d}".format(int(Time[1]) - Current_Time.minute - Consts.MINUTE_LAG.value, Consts.SECOND_LAG.value - Current_Time.second), end = '\r')
-
-        print('')
+                time.sleep(Consts.TIME_STEP.value)
+                print("{:02d}:{:02d}".format(int(Time[0] - Current_Time.hour)*60 + Time[1] - Current_Time.minute - Consts.MINUTE_LAG.value, Consts.SECOND_LAG.value - Current_Time.second), end='\r')         
+        
         print("VIVA HOLOLIVE RESISTANCE")
 
     def AddToCart(self, Button_Rank, Digital_Only):
