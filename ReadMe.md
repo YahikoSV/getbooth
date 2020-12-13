@@ -31,7 +31,7 @@ There are two similar links for example: \
 [A] https://booth.pm/en/items/2441613 \
 [B] https://hololive.booth.pm/items/2441613 
 
-The merch is the same but the pages are different. Only the link with the circle/owner (e.g. hololive) domain present (B) can be used.
+The merch is the same but the pages are different. Only the link with the subdomain [circle/owner name] (e.g. hololive) present (B) can be used.
 
 [3] Selenium Webdriver (Chrome, Edge, Firefox) \
 Download Selenium Driver of your browser choice. Make sure it is the same version as your browser. \
@@ -65,6 +65,7 @@ Discord: Yahiko#1354
 - [] Translate variant type from Japanese to English
 - [] Remove pre-requisite [7]
 - [] Find more bugs/ exceptions
+- [] Handle Gateway 504 Errors
 
 ##### Long-term Developments: 
 - [] Develop User Interface

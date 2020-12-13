@@ -19,7 +19,8 @@ class Consts(Enum):
     RELOAD_LAG = 1
     LOADING_LAG = 5 
     COUNTDOWN_TIMER = 30 #mins
-
+    TIME_STEP = 1
+    
 class ShoeMod:
     def __init__(self, Pixiv_ID, Pixiv_Password, webdriver_type, webdriver_path, latency = 1):
         self.Pixiv_ID = Pixiv_ID
@@ -116,7 +117,7 @@ class ShoeMod:
     def PurchaseItem(self, Ready_to_Purchase):
         if Ready_to_Purchase == True:
             #Failsafe
-            #self.LoadingBuffertoClick('//input[@value="Place Order"]','Placing Order...', '5/5 Order Completed')
+            self.LoadingBuffertoClick('//input[@value="Place Order"]','Placing Order...', '5/5 Order Completed')
             now = dt.datetime.now()
             print(f' Order Completed: {now.strftime("%H:%M:%S")}')
             logout = input("log-out? (type 'y' and Enter):")
@@ -143,9 +144,13 @@ class ShoeMod:
                 self.driver.find_element_by_xpath(elementname).click()
                 print(success_msg)
                 break
-            except Exception as e:
+            except TimeoutError:
+                print(str(sys.exc_info()[0]))
+                self.driver.refresh()
+            except Exception:
                 print(fail_msg)
                 #print(f"Error: {str(e)}") #if you want to show error msg 
+                print(str(sys.exc_info()[0]))
                 time.sleep(self.latency)
                 continue
 
@@ -155,9 +160,13 @@ class ShoeMod:
                 element.click()
                 print(success_msg)
                 break
-            except Exception as e:
+            except TimeoutError:
+                print(str(sys.exc_info()[0]))
+                self.driver.refresh()                    
+            except Exception:
                 print(fail_msg)
                 #print(f"Error: {str(e)}") #if you want to show error msg 
+                print(str(sys.exc_info()[0]))
                 time.sleep(self.latency)
                 continue
 
@@ -167,8 +176,10 @@ class ShoeMod:
                 self.driver.find_element_by_xpath(elementname).send_keys(credentials)
                 print(success_msg)
                 break
-            except:
+            except Exception:
                 print(fail_msg)
+                #print(f"Error: {str(e)}") #if you want to show error msg 
+                print(str(sys.exc_info()[0]))
                 time.sleep(self.latency)
                 continue
 
