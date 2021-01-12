@@ -1,2 +1,4 @@
-test.py
-MainwCred.py
+Credentials_Real.txt
+debug.txt
+Pixiv.text
+__pycache__

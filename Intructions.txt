@@ -1,0 +1,19 @@
+Write nescessary inputs at Credentials.txt
+
+1.) Username = Your Pixiv Username
+2.) Password = Your Pixiv Password
+3.) webdriver_type = Chrome (recommended), Edge, Firefox
+4.) webdriver_path = File Location of 3.
+5.) merch_url = webpage of merch (Note: sub-domain should be present)
+6.) pre_purchase = 0,1 (False,True)
+7.) loadtime_buffer = nautral number in seconds, depends on your net speed (try 1 [1 sec] if not sure)
+
+Example Format:
+
+Username=Pepsi_Man
+Password=Loves_Coca_Cola
+webdriver_type=Chrome
+webdriver_path=C:Downloads\chromedriver_win32\chromedriver.exe
+merch_url=https://hololive.booth.pm/items/2586180
+pre_purchase=0
+loadtime_buffer=1 
