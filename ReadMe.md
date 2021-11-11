@@ -1,10 +1,7 @@
-# Booth Shoe Bot
+# Booth Shoe Bot (Discontinued)
 Author: YahikoSV \
 Contributor: adwaitrawat \
 Version: 2.1.1
-
-#### FOR PERSONAL USE ONLY
-#### ASK PERMISSION FROM AUTHOR IF YOU WANT TO USE IT
 
 This is a Shoe Bot for Booth. Since it is only a personal/solo project,
 this only uses one method of purchasing an item. No UI Yet.
